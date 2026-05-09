@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(CharacterController))]
+
 public class PlayerController : MonoBehaviour
 {
     public float velocidad = 5f;
@@ -23,7 +24,7 @@ public class PlayerController : MonoBehaviour
         enSuelo = cc.isGrounded;
         if (enSuelo && velocidadVertical.y < 0)
             velocidadVertical.y = -2f;
-
+        º
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
