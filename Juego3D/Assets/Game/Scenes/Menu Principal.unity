@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 150406596}
   - component: {fileID: 150406595}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Button (S)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir
+  m_text: GAMEPLAY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2141,7 +2141,7 @@ GameObject:
   - component: {fileID: 390404255}
   - component: {fileID: 390404254}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Button (GD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3164,7 +3164,7 @@ GameObject:
   - component: {fileID: 658906145}
   - component: {fileID: 658906144}
   m_Layer: 5
-  m_Name: Button (C-P)
+  m_Name: Button (C-A)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3243,7 +3243,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Pantalla
+          m_StringArgument: Audio
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &658906145
@@ -3416,7 +3416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir
+  m_text: AUDIO
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3742,7 +3742,7 @@ GameObject:
   - component: {fileID: 781937109}
   - component: {fileID: 781937108}
   m_Layer: 5
-  m_Name: Button (C-A)
+  m_Name: Button (C-P)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3821,7 +3821,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Audio
+          m_StringArgument: Pantalla
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &781937109
@@ -4011,7 +4011,7 @@ GameObject:
   - component: {fileID: 823825895}
   - component: {fileID: 823825894}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Button (GD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4953,7 +4953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5432,7 +5432,7 @@ GameObject:
   - component: {fileID: 1119538935}
   - component: {fileID: 1119538934}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Button (S)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6126,7 +6126,7 @@ GameObject:
   - component: {fileID: 1224996684}
   - component: {fileID: 1224996683}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Button (GD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6377,7 +6377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6459,7 +6459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir
+  m_text: PANTALLA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7377,7 +7377,7 @@ GameObject:
   - component: {fileID: 1586585041}
   - component: {fileID: 1586585040}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: Button (GD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8187,7 +8187,7 @@ GameObject:
   - component: {fileID: 1729943604}
   - component: {fileID: 1729943603}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Button (S)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8815,10 +8815,10 @@ RectTransform:
   m_Children:
   - {fileID: 2130044876}
   - {fileID: 1119538933}
+  - {fileID: 823825893}
   - {fileID: 658906143}
   - {fileID: 781937107}
   - {fileID: 1345056793}
-  - {fileID: 823825893}
   m_Father: {fileID: 1171195695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8839,10 +8839,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8913,7 +8913,7 @@ GameObject:
   - component: {fileID: 1806161675}
   - component: {fileID: 1806161674}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Button (S)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
