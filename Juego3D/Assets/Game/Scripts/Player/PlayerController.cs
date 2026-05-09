@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         enSuelo = cc.isGrounded;
         if (enSuelo && velocidadVertical.y < 0)
             velocidadVertical.y = -2f;
-        º
+        
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
