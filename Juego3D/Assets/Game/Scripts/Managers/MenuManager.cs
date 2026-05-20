@@ -3,46 +3,73 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    [Header("Referencia al GameManager")]
+    public GameManager gameManager;
+
+    [Header("Paneles del menú")]
+    public GameObject panelMenuPrincipal;
+    public GameObject panelConfiguracion;
+
+    void Start()
+    {
+        MostrarMenuPrincipal();
+    }
+
     public void NuevaPartida()
     {
-        if (GameManager.Instance != null)
+        if (gameManager != null)
         {
-            GameManager.Instance.energiaTotal = 0;
-            GameManager.Instance.escenaActual = 0;
-            GameManager.Instance.cristalesRecogidos.Clear();
-
-            var piezas = GameManager.Instance.piezasNave;
-            foreach (var key in new System.Collections.Generic.List<string>(piezas.Keys))
-                piezas[key] = false;
-
-            GameManager.Instance.historialEventos.Push("Nueva partida iniciada");
+            gameManager.NuevaPartida();
         }
-
-        SceneManager.LoadScene("Playa");
-    }
-
-    public void CargarPartida()
-    {
-        if (JSONManager.Instance == null)
-        {
-            Debug.LogWarning("No se encontró JSONManager.");
-            return;
-        }
-
-        JSONManager.Instance.CargarProgreso();
-
-        int escena = GameManager.Instance.escenaActual;
-        string[] escenas = { "Playa", "Selva", "Cuevas", "ZonaNave" };
-
-        if (escena >= 0 && escena < escenas.Length)
-            SceneManager.LoadScene(escenas[escena]);
         else
+        {
+            Debug.LogWarning("No se asignó el GameManager en el MenuManager.");
             SceneManager.LoadScene("Playa");
+        }
     }
 
-    public void Salir()
+    public void ContinuarPartida()
     {
-        Debug.Log("Saliendo del juego");
+        if (gameManager != null)
+        {
+            gameManager.ContinuarPartida();
+        }
+        else
+        {
+            Debug.LogWarning("No se asignó el GameManager en el MenuManager.");
+            SceneManager.LoadScene("Playa");
+        }
+    }
+
+    public void MostrarConfiguracion()
+    {
+        if (panelMenuPrincipal != null)
+        {
+            panelMenuPrincipal.SetActive(false);
+        }
+
+        if (panelConfiguracion != null)
+        {
+            panelConfiguracion.SetActive(true);
+        }
+    }
+
+    public void MostrarMenuPrincipal()
+    {
+        if (panelMenuPrincipal != null)
+        {
+            panelMenuPrincipal.SetActive(true);
+        }
+
+        if (panelConfiguracion != null)
+        {
+            panelConfiguracion.SetActive(false);
+        }
+    }
+
+    public void SalirJuego()
+    {
+        Debug.Log("Saliendo del juego...");
         Application.Quit();
     }
 }
