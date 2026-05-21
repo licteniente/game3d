@@ -7361,7 +7361,7 @@ MonoBehaviour:
   cristalesNecesarios: 5
   textoEnergia: {fileID: 0}
   textoTiempo: {fileID: 0}
-  textoMensaje: {fileID: 0}
+  textoMensaje: {fileID: 573265768}
 --- !u!4 &402615021
 Transform:
   m_ObjectHideFlags: 0
@@ -8246,6 +8246,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &445155903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5848919683559839205, guid: 22ab1df2806de6b44b75a9f24f6b625c, type: 3}
+  m_PrefabInstance: {fileID: 8357081440076764397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &445155908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445155903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 1
+  idObjeto: Modulo_Energia_Selva
+  nombrePieza: "M\xF3dulo de energ\xEDa"
+  escenaDestino: 
+  mensajeAlRecoger: "M\xF3dulo de energ\xEDa recuperado"
+  recogerAlTocar: 1
+  gameManager: {fileID: 402615020}
 --- !u!1001 &448763652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10513,6 +10537,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 570739391}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &573265768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6636860635186674841, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+  m_PrefabInstance: {fileID: 1193207513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &573783089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12178,7 +12213,7 @@ MonoBehaviour:
   idObjeto: Cristal_Selva_02
   nombrePieza: 
   escenaDestino: 
-  mensajeAlRecoger: 
+  mensajeAlRecoger: "N\xFAcleo de energ\xEDa recolectado"
   recogerAlTocar: 1
   gameManager: {fileID: 402615020}
 --- !u!1 &652612206
@@ -20413,6 +20448,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 875128572}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &876338374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7361582462936127912, guid: f08f07f32f2fde3498d572657a8e2073, type: 3}
+  m_PrefabInstance: {fileID: 6046399443243934099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &876338379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876338374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 1
+  idObjeto: Bateria_Nave_Selva
+  nombrePieza: "Bater\xEDa de la nave"
+  escenaDestino: 
+  mensajeAlRecoger: "Bater\xEDa de la nave recuperada"
+  recogerAlTocar: 1
+  gameManager: {fileID: 402615020}
 --- !u!4 &882965206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
@@ -82494,7 +82553,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7361582462936127912, guid: f08f07f32f2fde3498d572657a8e2073, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 876338379}
   m_SourcePrefab: {fileID: 100100000, guid: f08f07f32f2fde3498d572657a8e2073, type: 3}
 --- !u!1001 &8357081440076764397
 PrefabInstance:
@@ -82551,7 +82613,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5848919683559839205, guid: 22ab1df2806de6b44b75a9f24f6b625c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 445155908}
   m_SourcePrefab: {fileID: 100100000, guid: 22ab1df2806de6b44b75a9f24f6b625c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
