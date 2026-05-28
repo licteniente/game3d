@@ -3865,6 +3865,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -201.37, z: 0}
+--- !u!1 &1359912012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1359912014}
+  - component: {fileID: 1359912013}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1359912013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359912012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f51abe8f3d2caa4e94679d01bd41d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  energiaTotal: 0
+  escenaActual: 0
+  cristalesRecogidos: []
+  usarTemporizador: 0
+  tiempoLimite: 120
+  cristalesNecesarios: 5
+  textoEnergia: {fileID: 0}
+  textoTiempo: {fileID: 0}
+  textoMensaje: {fileID: 0}
+--- !u!4 &1359912014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359912012}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 65.29536, y: 1.85389, z: 61.72276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1416183895
 GameObject:
   m_ObjectHideFlags: 0
@@ -6056,5 +6109,6 @@ SceneRoots:
   - {fileID: 1073066282}
   - {fileID: 686756698}
   - {fileID: 66970940}
+  - {fileID: 1359912014}
   - {fileID: 1939412527}
   - {fileID: 1268486859}
