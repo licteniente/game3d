@@ -186,13 +186,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1150060}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &1150058 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 1150057}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1150059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 1150057}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1150060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &3189605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1106,13 +1137,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 54826204}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &54826202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 54826201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &54826203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 54826201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &54826204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54826203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &61326555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1477,13 +1539,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 84862964}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &84862962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 84862961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &84862963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 84862961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &84862964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84862963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &86076504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5781,13 +5874,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 310332100}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &310332098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 310332097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &310332099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 310332097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &310332100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310332099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &319108295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6801,7 +6925,7 @@ Transform:
   - {fileID: 116504088}
   - {fileID: 727149732}
   - {fileID: 1865173889}
-  - {fileID: 1272595982}
+  - {fileID: 4208248193827589}
   - {fileID: 1974146075}
   - {fileID: 1825901908}
   - {fileID: 443008689}
@@ -7414,13 +7538,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   energiaTotal: 0
   escenaActual: 0
+  vidaJugador: 3
   cristalesRecogidos: []
+  prefabNucleoEnergia: {fileID: 6648434453255269649, guid: 1f6154cde7a974e43a7ddcc4e9711ab9, type: 3}
+  prefabPiezaMotor: {fileID: 7361582462936127912, guid: f08f07f32f2fde3498d572657a8e2073, type: 3}
+  prefabPiezaAntena: {fileID: 5848919683559839205, guid: 22ab1df2806de6b44b75a9f24f6b625c, type: 3}
+  prefabCombustible: {fileID: 7093423266425963640, guid: 04a574f1872ca854196dafe2c2ff33fa, type: 3}
+  spawnNucleosEnergia: []
+  spawnMotor: {fileID: 1062168124}
+  spawnAntena: {fileID: 1722395479}
+  spawnCombustible: {fileID: 1009989611}
   usarTemporizador: 0
   tiempoLimite: 120
   cristalesNecesarios: 5
-  textoEnergia: {fileID: 0}
+  textoEnergia: {fileID: 1193207515}
+  textoVida: {fileID: 469383315}
   textoTiempo: {fileID: 0}
-  textoMensaje: {fileID: 0}
+  textoMensaje: {fileID: 1193207514}
 --- !u!4 &402615021
 Transform:
   m_ObjectHideFlags: 0
@@ -8281,13 +8415,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 443008691}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &443008689 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 443008688}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &443008690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 443008688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &443008691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443008690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1 &444909581
 GameObject:
   m_ObjectHideFlags: 0
@@ -12724,6 +12889,10 @@ MonoBehaviour:
   escenaDestino: 
   mensajeAlRecoger: 
   recogerAlTocar: 1
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 0}
   gameManager: {fileID: 402615020}
 --- !u!1 &652612206
 GameObject:
@@ -21402,13 +21571,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 883355145}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &883355143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 883355142}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &883355144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 883355142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &883355145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883355144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &907246155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26524,6 +26724,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922410339}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &922899415
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 922899416}
+  - component: {fileID: 922899417}
+  m_Layer: 0
+  m_Name: Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &922899416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922899415}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1062168124}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &922899417
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922899415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &924972025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
@@ -27761,6 +28014,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 1008435469}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1009989610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009989611}
+  m_Layer: 0
+  m_Name: SpawnCombustible
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1009989611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009989610}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.95228, y: 8.12319, z: 35.81891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1013463106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28414,6 +28698,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 1060500426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1062168123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1062168124}
+  m_Layer: 0
+  m_Name: spawnMotor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1062168124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062168123}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.95228, y: 8.12319, z: 35.81891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 922899416}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1068629239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30253,6 +30569,28 @@ PrefabInstance:
       addedObject: {fileID: 469383314}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+--- !u!114 &1193207514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6636860635186674841, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+  m_PrefabInstance: {fileID: 1193207513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1193207515 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7192005558781701250, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+  m_PrefabInstance: {fileID: 1193207513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1214879772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31887,80 +32225,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 1270823143}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1272595981
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 368980431}
-    m_Modifications:
-    - target: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_Name
-      value: forestpack_foliage_mushroom_red_small (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.120331
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.5000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -14.150002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
---- !u!4 &1272595982 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
-  m_PrefabInstance: {fileID: 1272595981}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1281621148
 PrefabInstance:
@@ -49196,13 +49460,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1465746202}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &1465746200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 1465746199}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1465746201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 1465746199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1465746202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465746201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1 &1467290010
 GameObject:
   m_ObjectHideFlags: 0
@@ -69920,6 +70215,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4854348093442056, guid: 791c30b04e8fc1e4fbf198c410a652e2, type: 3}
   m_PrefabInstance: {fileID: 1406290154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1644177717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644177718}
+  m_Layer: 0
+  m_Name: SpawnHongos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644177718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644177717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.75047, y: 3.51584, z: 40.26529}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1645095406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76114,6 +76440,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4075937848129010, guid: 29636f40562819649b730c52f1babbcb, type: 3}
   m_PrefabInstance: {fileID: 1720344939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1722395478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722395479}
+  m_Layer: 0
+  m_Name: SpawnAntena
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722395479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722395478}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.95228, y: 8.12319, z: 35.81891}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1728692484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77720,13 +78077,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1798250404}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &1798250402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 1798250401}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1798250403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 1798250401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1798250404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798250403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &1801334490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78170,13 +78558,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1825901910}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &1825901908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 1825901907}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1825901909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 1825901907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1825901910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825901909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &1828348042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86105,13 +86524,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1974146077}
   m_SourcePrefab: {fileID: 100100000, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
 --- !u!4 &1974146075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4208249379357960, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
   m_PrefabInstance: {fileID: 1974146074}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1974146076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240686429475702, guid: da33a1bfeaaabaa4597896ca7003b785, type: 3}
+  m_PrefabInstance: {fileID: 1974146074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1974146077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974146076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0be9ec46a71514785c5691ce211fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactable
+  tipo: 4
+  idObjeto: Hongo
+  nombrePieza: Hongo
+  escenaDestino: Selva
+  mensajeAlRecoger: 
+  recogerAlTocar: 0
+  "da\xF1o": 1
+  destruirAlTocar: 1
+  sonidoRecoger: {fileID: 0}
+  "sonidoDa\xF1o": {fileID: 8300000, guid: e320201b7533ee243b9380bcd8a94af2, type: 3}
+  gameManager: {fileID: 402615020}
 --- !u!1001 &1976243800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93087,6 +93537,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478235978383186, guid: d8ebd34c38d3d0a40b5422c0fd136471, type: 3}
   m_PrefabInstance: {fileID: 2141911353}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &4208248193827589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+  m_PrefabInstance: {fileID: 6592086239815181189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &768589015152377222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -93148,6 +93603,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f6154cde7a974e43a7ddcc4e9711ab9, type: 3}
+--- !u!1001 &6592086239815181189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 368980431}
+    m_Modifications:
+    - target: {fileID: 4838554876976487659, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_Name
+      value: forestpack_foliage_mushroom_red_small (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.120331
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.5000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.150002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469468416454511368, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6766055098797197854, guid: bef9cc05934641d4db55e985f3477612, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 402615020}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bef9cc05934641d4db55e985f3477612, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -93171,3 +93687,7 @@ SceneRoots:
   - {fileID: 621825713}
   - {fileID: 402615021}
   - {fileID: 768589015152377222}
+  - {fileID: 1062168124}
+  - {fileID: 1722395479}
+  - {fileID: 1009989611}
+  - {fileID: 1644177718}
