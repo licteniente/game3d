@@ -25,6 +25,14 @@ public class Interactable : MonoBehaviour
     [Header("Forma de interacción")]
     public bool recogerAlTocar = true;
 
+    [Header("Daño")]
+    public int daño = 1;
+    public bool destruirAlTocar = true;
+
+    [Header("Sonidos")]
+    public AudioClip sonidoRecoger;
+    public AudioClip sonidoDaño;
+
     [Header("Referencia")]
     public GameManager gameManager;
 
@@ -67,10 +75,10 @@ public class Interactable : MonoBehaviour
             return;
         }
 
-        usado = true;
-
         if (tipo == TipoInteractuable.Cristal)
         {
+            usado = true;
+
             gameManager.AgregarCristal(idObjeto);
 
             if (mensajeAlRecoger != "")
@@ -78,10 +86,17 @@ public class Interactable : MonoBehaviour
                 gameManager.MostrarMensaje(mensajeAlRecoger);
             }
 
+            if (sonidoRecoger != null)
+            {
+                AudioSource.PlayClipAtPoint(sonidoRecoger, transform.position);
+            }
+
             Destroy(gameObject);
         }
         else if (tipo == TipoInteractuable.Pieza)
         {
+            usado = true;
+
             gameManager.RepararPieza(nombrePieza);
 
             if (mensajeAlRecoger != "")
@@ -89,10 +104,17 @@ public class Interactable : MonoBehaviour
                 gameManager.MostrarMensaje(mensajeAlRecoger);
             }
 
+            if (sonidoRecoger != null)
+            {
+                AudioSource.PlayClipAtPoint(sonidoRecoger, transform.position);
+            }
+
             Destroy(gameObject);
         }
         else if (tipo == TipoInteractuable.Portal)
         {
+            usado = true;
+
             if (mensajeAlRecoger != "")
             {
                 gameManager.MostrarMensaje(mensajeAlRecoger);
@@ -102,6 +124,8 @@ public class Interactable : MonoBehaviour
         }
         else if (tipo == TipoInteractuable.SalidaCuevas)
         {
+            usado = true;
+
             if (mensajeAlRecoger != "")
             {
                 gameManager.MostrarMensaje(mensajeAlRecoger);
@@ -111,16 +135,27 @@ public class Interactable : MonoBehaviour
         }
         else if (tipo == TipoInteractuable.Trampa)
         {
+            gameManager.QuitarVida(daño);
+
             if (mensajeAlRecoger != "")
             {
                 gameManager.MostrarMensaje(mensajeAlRecoger);
             }
             else
             {
-                gameManager.MostrarMensaje("Has caído en una trampa.");
+                gameManager.MostrarMensaje("Cuidado, el hongo te hizo daño.");
             }
 
-            gameManager.ReiniciarEscenaActual();
+            if (sonidoDaño != null)
+            {
+                AudioSource.PlayClipAtPoint(sonidoDaño, transform.position);
+            }
+
+            if (destruirAlTocar)
+            {
+                usado = true;
+                Destroy(gameObject);
+            }
         }
     }
 }
