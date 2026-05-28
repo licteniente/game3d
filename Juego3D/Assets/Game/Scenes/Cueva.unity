@@ -48239,9 +48239,9 @@ MonoBehaviour:
   usarTemporizador: 0
   tiempoLimite: 120
   cristalesNecesarios: 5
-  textoEnergia: {fileID: 0}
+  textoEnergia: {fileID: 1751075287}
   textoTiempo: {fileID: 0}
-  textoMensaje: {fileID: 0}
+  textoMensaje: {fileID: 1180419237}
 --- !u!4 &1253551867
 Transform:
   m_ObjectHideFlags: 0
@@ -66463,6 +66463,17 @@ PrefabInstance:
       addedObject: {fileID: 837946209}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+--- !u!114 &1751075287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7192005558781701250, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+  m_PrefabInstance: {fileID: 1751075286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1760287270
 PrefabInstance:
   m_ObjectHideFlags: 0

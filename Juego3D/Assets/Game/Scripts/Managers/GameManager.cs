@@ -9,6 +9,7 @@ public class DatosGuardado
 {
     public int energiaTotal;
     public int escenaActual;
+    public int vidaJugador;
     public string[] cristalesRecogidos;
     public string[] piezasReparadas;
 }
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     [Header("Datos del jugador")]
     public int energiaTotal = 0;
     public int escenaActual = 0;
+    public int vidaJugador = 3;
 
     [Header("Estructuras de datos requeridas")]
     public List<string> cristalesRecogidos = new List<string>();
@@ -25,15 +27,31 @@ public class GameManager : MonoBehaviour
     public Queue<string> tareasReparacion = new Queue<string>();
     public Stack<string> historialEventos = new Stack<string>();
 
+    [Header("Prefabs de objetos recolectables")]
+    public GameObject prefabNucleoEnergia;
+    public GameObject prefabPiezaMotor;
+    public GameObject prefabPiezaAntena;
+    public GameObject prefabCombustible;
+
+    [Header("SpawnPoints de núcleos de energía")]
+    public Transform[] spawnNucleosEnergia;
+
+    [Header("SpawnPoints de piezas de la nave")]
+    public Transform spawnMotor;
+    public Transform spawnAntena;
+    public Transform spawnCombustible;
+
     [Header("Temporizador de Cuevas")]
     public bool usarTemporizador = false;
     public float tiempoLimite = 120f;
     public int cristalesNecesarios = 5;
+
     private float tiempoRestante;
     private bool tiempoActivo = false;
 
     [Header("UI")]
     public TMP_Text textoEnergia;
+    public TMP_Text textoVida;
     public TMP_Text textoTiempo;
     public TMP_Text textoMensaje;
 
@@ -49,6 +67,8 @@ public class GameManager : MonoBehaviour
         {
             CargarProgreso();
         }
+
+        CrearObjetosRecolectables();
 
         if (usarTemporizador)
         {
@@ -86,6 +106,7 @@ public class GameManager : MonoBehaviour
     {
         energiaTotal = 0;
         escenaActual = 1;
+        vidaJugador = 3;
 
         cristalesRecogidos.Clear();
 
@@ -96,6 +117,133 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Playa");
     }
 
+    public void CrearObjetosRecolectables()
+    {
+        CrearNucleosEnergia();
+        CrearPiezaMotor();
+        CrearPiezaAntena();
+        CrearCombustible();
+    }
+
+    void CrearNucleosEnergia()
+    {
+        if (prefabNucleoEnergia == null)
+        {
+            return;
+        }
+
+        if (spawnNucleosEnergia == null)
+        {
+            return;
+        }
+
+        for (int i = 0; i < spawnNucleosEnergia.Length; i++)
+        {
+            if (spawnNucleosEnergia[i] != null)
+            {
+                string id = "nucleo_" + SceneManager.GetActiveScene().name + "_" + i;
+
+                if (!cristalesRecogidos.Contains(id))
+                {
+                    GameObject nuevoNucleo = Instantiate(
+                        prefabNucleoEnergia,
+                        spawnNucleosEnergia[i].position,
+                        spawnNucleosEnergia[i].rotation
+                    );
+
+                    Interactable interactable = nuevoNucleo.GetComponent<Interactable>();
+
+                    if (interactable != null)
+                    {
+                        interactable.tipo = Interactable.TipoInteractuable.Cristal;
+                        interactable.idObjeto = id;
+                        interactable.mensajeAlRecoger = "Has recogido un núcleo de energía.";
+                        interactable.recogerAlTocar = true;
+                        interactable.gameManager = this;
+                    }
+                }
+            }
+        }
+    }
+
+    void CrearPiezaMotor()
+    {
+        if (prefabPiezaMotor != null && spawnMotor != null)
+        {
+            if (piezasNave.ContainsKey("motor") && piezasNave["motor"] == false)
+            {
+                GameObject motor = Instantiate(
+                    prefabPiezaMotor,
+                    spawnMotor.position,
+                    spawnMotor.rotation
+                );
+
+                Interactable interactable = motor.GetComponent<Interactable>();
+
+                if (interactable != null)
+                {
+                    interactable.tipo = Interactable.TipoInteractuable.Pieza;
+                    interactable.nombrePieza = "motor";
+                    interactable.mensajeAlRecoger = "Has recogido una parte de la nave: motor.";
+                    interactable.recogerAlTocar = true;
+                    interactable.gameManager = this;
+                }
+            }
+        }
+    }
+
+    void CrearPiezaAntena()
+    {
+        if (prefabPiezaAntena != null && spawnAntena != null)
+        {
+            if (piezasNave.ContainsKey("antena") && piezasNave["antena"] == false)
+            {
+                GameObject antena = Instantiate(
+                    prefabPiezaAntena,
+                    spawnAntena.position,
+                    spawnAntena.rotation
+                );
+
+                Interactable interactable = antena.GetComponent<Interactable>();
+
+                if (interactable != null)
+                {
+                    interactable.tipo = Interactable.TipoInteractuable.Pieza;
+                    interactable.nombrePieza = "antena";
+                    interactable.mensajeAlRecoger = "Has recogido una parte de la nave: antena.";
+                    interactable.recogerAlTocar = true;
+                    interactable.gameManager = this;
+                }
+            }
+        }
+    }
+
+    void CrearCombustible()
+    {
+        if (prefabCombustible != null && spawnCombustible != null)
+        {
+            if (piezasNave.ContainsKey("combustible") && piezasNave["combustible"] == false)
+            {
+                GameObject combustible = Instantiate(
+                    prefabCombustible,
+                    spawnCombustible.position,
+                    spawnCombustible.rotation
+                );
+
+                Interactable interactable = combustible.GetComponent<Interactable>();
+
+                if (interactable != null)
+                {
+                    interactable.tipo = Interactable.TipoInteractuable.Pieza;
+                    interactable.nombrePieza = "combustible";
+                    interactable.mensajeAlRecoger = "Has recogido suministros de combustible.";
+                    interactable.recogerAlTocar = true;
+                    interactable.gameManager = this;
+                }
+            }
+        }
+    }
+
     public void AgregarCristal(string idCristal)
     {
         if (!cristalesRecogidos.Contains(idCristal))
@@ -103,7 +251,7 @@ public class GameManager : MonoBehaviour
             cristalesRecogidos.Add(idCristal);
             energiaTotal += 10;
 
-            historialEventos.Push("Cristal recogido: " + idCristal);
+            historialEventos.Push("Objeto recogido: " + idCristal);
 
             GuardarProgreso();
             ActualizarUI();
@@ -125,6 +273,33 @@ public class GameManager : MonoBehaviour
 
             GuardarProgreso();
             ActualizarUI();
+        }
+        else
+        {
+            Debug.LogWarning("La pieza no existe en el Dictionary: " + nombrePieza);
+        }
+    }
+
+    public void QuitarVida(int cantidad)
+    {
+        vidaJugador -= cantidad;
+
+        if (vidaJugador < 0)
+        {
+            vidaJugador = 0;
+        }
+
+        historialEventos.Push("El jugador perdió vida. Vida actual: " + vidaJugador);
+
+        MostrarMensaje("Has recibido daño. Vida: " + vidaJugador);
+
+        ActualizarUI();
+        GuardarProgreso();
+
+        if (vidaJugador <= 0)
+        {
+            MostrarMensaje("Te quedaste sin vida. Reiniciando escena...");
+            ReiniciarEscenaActual();
         }
     }
 
@@ -198,6 +373,7 @@ public class GameManager : MonoBehaviour
 
         if (tiempoRestante <= 0)
         {
+            MostrarMensaje("Se acabó el tiempo.");
             ReiniciarEscenaActual();
         }
     }
@@ -207,6 +383,7 @@ public class GameManager : MonoBehaviour
         if (cristalesRecogidos.Count >= cristalesNecesarios)
         {
             tiempoActivo = false;
+            MostrarMensaje("Lograste salir de la cueva.");
             CambiarEscena("Zona Nave");
         }
         else
@@ -217,7 +394,7 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarEscenaActual()
     {
-        historialEventos.Push("Se reinició la escena por tiempo terminado");
+        historialEventos.Push("Se reinició la escena actual");
 
         GuardarProgreso();
 
@@ -230,6 +407,7 @@ public class GameManager : MonoBehaviour
 
         datos.energiaTotal = energiaTotal;
         datos.escenaActual = escenaActual;
+        datos.vidaJugador = vidaJugador;
         datos.cristalesRecogidos = cristalesRecogidos.ToArray();
 
         List<string> piezasListas = new List<string>();
@@ -265,6 +443,7 @@ public class GameManager : MonoBehaviour
 
         energiaTotal = datos.energiaTotal;
         escenaActual = datos.escenaActual;
+        vidaJugador = datos.vidaJugador;
 
         cristalesRecogidos.Clear();
 
@@ -294,6 +473,11 @@ public class GameManager : MonoBehaviour
         if (textoEnergia != null)
         {
             textoEnergia.text = "Energía: " + energiaTotal;
+        }
+
+        if (textoVida != null)
+        {
+            textoVida.text = "Vida: " + vidaJugador;
         }
 
         if (textoTiempo != null && usarTemporizador)

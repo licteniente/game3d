@@ -364,9 +364,9 @@ MonoBehaviour:
   usarTemporizador: 0
   tiempoLimite: 120
   cristalesNecesarios: 5
-  textoEnergia: {fileID: 0}
+  textoEnergia: {fileID: 1953041728}
   textoTiempo: {fileID: 0}
-  textoMensaje: {fileID: 0}
+  textoMensaje: {fileID: 781590390}
 --- !u!4 &279681892
 Transform:
   m_ObjectHideFlags: 0
@@ -6216,6 +6216,37 @@ Transform:
   - {fileID: 1240427194}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1003904279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003904280}
+  m_Layer: 0
+  m_Name: spawnpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1003904280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003904279}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 614.6045, y: 0, z: 497.61783}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153833214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5586776621635597747, guid: 65750bc370842a24da759701ded49079, type: 3}
@@ -7552,6 +7583,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7949073834930953428, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
   m_PrefabInstance: {fileID: 1953041726}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1953041728 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7192005558781701250, guid: f28ecba76ebc89844a3653f656cc2ca4, type: 3}
+  m_PrefabInstance: {fileID: 1953041726}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1965240395
 GameObject:
   m_ObjectHideFlags: 0
@@ -7849,3 +7891,4 @@ SceneRoots:
   - {fileID: 1953041726}
   - {fileID: 961435407}
   - {fileID: 279681892}
+  - {fileID: 1003904280}
