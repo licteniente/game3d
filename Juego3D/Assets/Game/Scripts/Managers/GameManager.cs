@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public Transform spawnAntena;
     public Transform spawnCombustible;
 
-    [Header("Temporizador de Cuevas")]
+    [Header("Temporizador de Cueva")]
     public bool usarTemporizador = false;
     public float tiempoLimite = 120f;
     public int cristalesNecesarios = 5;
@@ -114,7 +114,7 @@ public class GameManager : MonoBehaviour
 
         GuardarProgreso();
 
-        SceneManager.LoadScene("Playa");
+        SceneManager.LoadScene("Selva");
     }
 
     public void CrearObjetosRecolectables()
@@ -305,21 +305,17 @@ public class GameManager : MonoBehaviour
 
     public void CambiarEscena(string nombreEscena)
     {
-        if (nombreEscena == "Playa")
+        if (nombreEscena == "Selva")
         {
             escenaActual = 1;
         }
-        else if (nombreEscena == "Selva")
+        else if (nombreEscena == "Cueva")
         {
             escenaActual = 2;
         }
-        else if (nombreEscena == "Cuevas Cristalinas")
+        else if (nombreEscena == "Montaña")
         {
             escenaActual = 3;
-        }
-        else if (nombreEscena == "Zona Nave")
-        {
-            escenaActual = 4;
         }
 
         historialEventos.Push("Cambio de escena: " + nombreEscena);
@@ -335,23 +331,19 @@ public class GameManager : MonoBehaviour
 
         if (escenaActual == 1)
         {
-            SceneManager.LoadScene("Playa");
+            SceneManager.LoadScene("Selva");
         }
         else if (escenaActual == 2)
         {
-            SceneManager.LoadScene("Selva");
+            SceneManager.LoadScene("Cueva");
         }
         else if (escenaActual == 3)
         {
-            SceneManager.LoadScene("Cuevas Cristalinas");
-        }
-        else if (escenaActual == 4)
-        {
-            SceneManager.LoadScene("Zona Nave");
+            SceneManager.LoadScene("Montaña");
         }
         else
         {
-            SceneManager.LoadScene("Playa");
+            SceneManager.LoadScene("Selva");
         }
     }
 
@@ -378,17 +370,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void VerificarSalidaCuevas()
+    public void VerificarSalidaCueva()
     {
         if (cristalesRecogidos.Count >= cristalesNecesarios)
         {
             tiempoActivo = false;
             MostrarMensaje("Lograste salir de la cueva.");
-            CambiarEscena("Zona Nave");
+            CambiarEscena("Montaña");
         }
         else
         {
-            MostrarMensaje("Necesitas " + cristalesNecesarios + " cristales para salir.");
+            MostrarMensaje("Necesitas " + cristalesNecesarios + " núcleos de energía para salir.");
         }
     }
 

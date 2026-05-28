@@ -131,7 +131,7 @@ public class Interactable : MonoBehaviour
                 gameManager.MostrarMensaje(mensajeAlRecoger);
             }
 
-            gameManager.VerificarSalidaCuevas();
+            gameManager.VerificarSalidaCueva();
         }
         else if (tipo == TipoInteractuable.Trampa)
         {

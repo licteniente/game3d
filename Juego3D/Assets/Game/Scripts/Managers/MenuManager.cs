@@ -24,7 +24,7 @@ public class MenuManager : MonoBehaviour
         else
         {
             Debug.LogWarning("No se asignó el GameManager en el MenuManager.");
-            SceneManager.LoadScene("Playa");
+            SceneManager.LoadScene("Selva");
         }
     }
 
@@ -37,7 +37,7 @@ public class MenuManager : MonoBehaviour
         else
         {
             Debug.LogWarning("No se asignó el GameManager en el MenuManager.");
-            SceneManager.LoadScene("Playa");
+            SceneManager.LoadScene("Selva");
         }
     }
 
